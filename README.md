@@ -78,5 +78,7 @@ Cross-Game Economy: Shared tokens or achievements across multiple Stellar-based 
 DAO-Driven Governance: Community voting for rule changes, balancing, and tournament hosting.
 
 7. Contract Details
+   
    Contract ID CBHVZGXKAXHA4T2JM4B4J255UOS537HYH4HI6JJS4SK35FDK4QKKCWIR
 <img width="1798" height="891" alt="Screenshot 2025-11-02 175755" src="https://github.com/user-attachments/assets/8e8c5154-8d80-4014-8ca9-b9026ad8b05e" />
+
