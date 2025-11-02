@@ -1,0 +1,35 @@
+[package]
+name = "stellar_duels"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <you@example.com>"]
+description = "A decentralized PvP turn-based combat game on Soroban"
+
+# This tells Cargo to build a cdylib (C-compatible dynamic library)
+# which is required for Soroban smart contracts
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+# Soroban SDK - the core library for writing Soroban smart contracts
+# Provides types like Env, Address, BytesN, storage APIs, crypto functions, etc.
+soroban-sdk = "21.7.0"
+
+[dev-dependencies]
+# Additional testing utilities for Soroban contracts
+soroban-sdk = { version = "21.7.0", features = ["testutils"] }
+
+# Profile optimizations for smaller WASM contract sizes
+[profile.release]
+opt-level = "z"           # Optimize for size
+overflow-checks = true    # Keep overflow checks for safety
+debug = 0                 # Remove debug info
+strip = "symbols"         # Strip symbols
+debug-assertions = false
+panic = "abort"           # Smaller panic handler
+codegen-units = 1         # Better optimization
+lto = true                # Link-time optimization
+
+[profile.release-with-logs]
+inherits = "release"
+debug-assertions = true

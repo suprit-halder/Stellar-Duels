@@ -1,0 +1,12 @@
+{
+  "p1": {
+    "move": 1,
+    "commitment": "28f50c138a0ed534059ed1ef5ac0170625cec47911f9cbff2c5bc2158bbc10bd",
+    "salt": "8e44cdfcbed4f65b9db5349e4947f88fca76d67d2d69b62194efe6582b8bea2f"
+  },
+  "p2": {
+    "move": 3,
+    "commitment": "6decb246933ae3c495468f37000dc8d3003402a5f04946a9ed3eb2faf0069489",
+    "salt": "98352f2be9ed58d41e6b159815bcedacb0d10b28c9e4a0f44b21874323b9585a"
+  }
+}
